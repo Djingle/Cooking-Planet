@@ -1,4 +1,4 @@
-Shader "My Custom Shaders/Toon Shader"
+Shader "Hidden/CellShading"
 {
        /*
        The properties block enables you to edit and save the defined

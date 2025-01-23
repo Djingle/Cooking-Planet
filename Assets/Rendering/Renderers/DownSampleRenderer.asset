@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3160602230171468215
+--- !u!114 &-8651582426598681196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,12 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 894c3300838fe39469ee5dfa4b627c4f, type: 3}
-  m_Name: R2SFeature
+  m_Script: {fileID: 11500000, guid: 859d5ad7696e0d34cae04ee21e8191d9, type: 3}
+  m_Name: OutlineFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
-  m_Shader: {fileID: 4800000, guid: 6b3875fa760c43c439b5df2d04cf3d56, type: 3}
-  m_DownScaleTexture: {fileID: 8400000, guid: 2d3a2e0d06ed0b944bbaa645e35d606b, type: 2}
+  m_Active: 0
+  m_Shader: {fileID: 4800000, guid: f3fff0d5196699d4e9d7a5dca7819bcf, type: 3}
+  settings:
+    outlineThickness: 9
+    outlineColor: {r: 0, g: 0, b: 0, a: 1}
+    depthThreshold: 0.005
+    normalThreshold: 0.25
+    luminanceThreshold: 2
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +65,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: URP-HighFidelity-Renderer
+  m_Name: DownSampleRenderer
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7,
@@ -68,8 +73,8 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: -1878332245247344467}
-  - {fileID: -3160602230171468215}
-  m_RendererFeatureMap: adc0de57c6d2eee5497e526a044923d4
+  - {fileID: -8651582426598681196}
+  m_RendererFeatureMap: adc0de57c6d2eee594d592fd9e67ef87
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
